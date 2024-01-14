@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- huge shoutout to @wyderekk and @whosneksio for helping me make this site :3 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>🖤 shiinano</title>
-    <link rel="icon" href="assets/images/icon.png" type="image/png">
+    <link rel="icon" href="assets/icons/icon.jpg" type="image/jpg">
 
     <meta content="shiinano" property="og:title"/>
     <meta content="Hardware enthusiast" property="og:description"/>
@@ -14,6 +15,7 @@
 
     <!--css-->
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/tippy.css"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -25,12 +27,12 @@
 <body>
     <div class="header">
         <div class="discord-image"><img src="assets/images/vamp-cat.png" alt="profile picture"></div>
-        <div class="greetings"><span id="color-text">Hello, I'm shiinano</span></div>
+        <div class="greetings">Hello, I'm <span class="color-text">shiinano</span></div>
         <span id="discord-status" class="discord-status">Currently, I'm <span id="discord-status-highlight"></span>
         <span id="spotify-text"><span id="spotify-song"></span> <span id="spotify-artist"></span></span></span>
         <div class="description">
             <br>
-            <span>I'm a hardware enthusiast from Poland, interested in Programming and tech. Currently studying in ZSEK in Lublin. In my free time, I enjoy learning Java and playing games.</span>
+            <span>I'm a hardware enthusiast from Poland, interested in programming and tech. Currently studying in ZSEK in Lublin. In my free time, I enjoy learning Java and playing games.</span>
         </div>
     </div>
     <div class="social-card">
@@ -41,6 +43,27 @@
             <a href="https://github.com/shiinano-mommy" target="_blank" class="github">
                 <img src="assets/icons/github.png" alt="github link" height="5%" width="5%">
             </a>
+            <a href="https://discord.com/users/427184625689821194" target="_blank" class="discord">
+                <img src="assets/icons/discord.png" alt="discord link" height="5.4%" width="5.4%">
+            </a>
+        </div>
+    </div>
+    <div class="projects">
+        <div>
+            <div class="project-title">PROJECTS</div>
+            <br>
+            <div class="project-description">
+                <span>Here are some of my projects that I've worked on.</span>
+            </div>
+        </div>
+        <div class="bio-page">
+            <div class="site-info">
+                <a target="_blank" href="https://github.com/shiinano-mommy/shiinano-mommy.github.io"><svg id="github-repo" class="svg-arrow" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#e4e4e4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></a>
+                website
+                <div class="site-description">
+                    My personal website written in HTML, CSS and JS. It's a simple website that I made to learn more about web development.
+                </div>
+            </div>
         </div>
     </div>
 </body>
