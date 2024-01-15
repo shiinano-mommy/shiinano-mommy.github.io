@@ -9,11 +9,11 @@ fetch(`https://api.lanyard.rest/v1/users/${discordID}`)
             document.getElementById("discord-status-highlight").innerText = "Online";
             document.getElementById("discord-status-highlight").style.color = "#23a55a";
           }
-          else if (e.data.discord_status == "idle"){
+          else if (e.data.discord_status == "away from keyboard"){
             document.getElementById("discord-status-highlight").innerText = "Idle";
             document.getElementById("discord-status-highlight").style.color = "#f0b232";
           }
-          else if (e.data.discord_status == "dnd"){
+          else if (e.data.discord_status == "on do not disturb"){
             document.getElementById("discord-status-highlight").innerText = "on Do not disturb";
             document.getElementById("discord-status-highlight").style.color = "#f23f43";
           }
