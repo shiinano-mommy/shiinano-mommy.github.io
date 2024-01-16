@@ -1,5 +1,5 @@
 let webSocket = new WebSocket("wss://api.lanyard.rest/socket");
-let discordID = "427184625689821194";
+let discordID = "633174641883480077";
 
 fetch(`https://api.lanyard.rest/v1/users/${discordID}`)
   .then((response) => response.json())
@@ -10,11 +10,11 @@ fetch(`https://api.lanyard.rest/v1/users/${discordID}`)
             document.getElementById("discord-status-highlight").style.color = "#23a55a";
           }
           else if (e.data.discord_status == "idle"){
-            document.getElementById("discord-status-highlight").innerText = "away from keyboard";
+            document.getElementById("discord-status-highlight").innerText = "Idle";
             document.getElementById("discord-status-highlight").style.color = "#f0b232";
           }
           else if (e.data.discord_status == "dnd"){
-            document.getElementById("discord-status-highlight").innerText = "on Do not disturb";
+            document.getElementById("discord-status-highlight").innerText = "Do not disturb";
             document.getElementById("discord-status-highlight").style.color = "#f23f43";
           }
           else if (e.data.discord_status == "offline"){
@@ -68,6 +68,3 @@ webSocket.addEventListener("message", (event) => {
         }
     }
 });
-
-
-
