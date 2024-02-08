@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- huge shoutout to @wyderekk and @whosneksio for helping me make this site :3 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,44 +21,37 @@
 
     <!--scripts-->
     <script src="script/app.js"></script>
-
 </head>
 <body>
-    <div class="header">
-        <div class="discord-image"><img src="assets/images/vamp-cat.png" alt="profile picture"></div>
-        <div class="greetings">Hello, I'm <span class="color-text">shiinano</span></div>
+<section class="main-info">
+    <div class="title">
+        <span class="name">shiinano</span>
+    </div>
+</section>
+<section class="spotify">
+    <div>
         <span id="discord-status" class="discord-status">Currently, I'm <span id="discord-status-highlight"></span>
         <span id="spotify-text"><span id="spotify-song"></span> <span id="spotify-artist"></span></span></span>
-        <div></div>
-        <div class="description">
-            <div class="about-me">
-                <div class="title">About me
-                    <div class="info">
-                        Hello, my name is shiinano. I'm a Java developer from Lublin, Poland. My programming journey started by making simple websites. Then, I moved onto making Java plugins and addons, as I found it interesting and it expanded my creative thinking. I am self-taught, learning through tutorials and reading code documentation.
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-    <div class="social-card">
-            <div class="socials">
-                <a href="https://open.spotify.com/user/31exhz2c4wys4ivs3ctqsotahmda?si=67d048fbbc874911" target="_blank" class="spotify">
-                <img src="assets/icons/spotify_white_logo.png" alt="spotify link" height="5%" width="5%">
-                </a>
-                <a href="https://github.com/shiinano-mommy" target="_blank" class="github">
-                <img src="assets/icons/github.png" alt="github link" height="5%" width="5%">
-                </a>
-                <a href="https://discord.com/users/427184625689821194" target="_blank" class="discord">
-                <img src="assets/icons/discord1.png" alt="discord link" height="5.4%" width="5.4%">
-                </a>
-            </div>
+</section>
+<section class="description">
+    <div class="about-me">
+        Hello, I'm shiinano. I'm a hardware enthusiast and a software developer. I'm also a student at ZSEK in Lublin.
+        My journey with programming started with making simple websites, now I moved to learning java. I'm also interested in hardware.
     </div>
-    <div class="projects">
+</section>
+<section class="socials">
+    <div class="socials-container">
+        <a href="https://github.com/shiinano-mommy"><img class="github-image" src="assets/icons/github.png" alt="github" id="github" data-tippy-content="GitHub"/></a> <!--github-->
+        <a href="https://discord.com/users/427184625689821194"><img class="discord-image" src="assets/icons/discord1.png" alt="discord" id="discord" data-tippy-content="Discord"/></a> <!--discord-->
+        <a href="https://open.spotify.com/user/31exhz2c4wys4ivs3ctqsotahmda?si=67d048fbbc874911"><img class="spotify-image" src="assets/icons/spotify_white_logo.png" alt="spotify" id="spotify" data-tippy-content="Spotify"/></a> <!--spotify-->
+    </div>
+</section>
+<section class="projects">
+    <div class="projects-container">
         <div>
-            <div class="project-title">PROJECTS</div>
-            <div class="project-description">
-                <span>Here are some of my projects that I've worked on.</span>
-            </div>
+            <div class="project-title">Projects</div>
+            <div class="project-description">Here are some of my projects</div>
         </div>
         <div class="bio-page">
             <div class="site-info">
@@ -71,10 +63,6 @@
             </div>
         </div>
     </div>
-    <div class="technologies">
-        <div>
-
-        </div>
-    </div> 
+</section>
 </body>
 </html>
